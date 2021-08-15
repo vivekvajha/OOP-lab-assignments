@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+ int main()
+{
+//use of new operator
+float *inches = new float;
+float *feet = new float;
+float *yard = new float;
+
+cout<<" Enter the value in inches:"<<endl;
+cin>>*inches;
+
+*feet=*inches/12;          //convertion of feet to inches
+*yard=*feet/36;            //convertion of yards to feet
+
+cout<<"Converted value in yards: "<<*yard<<" yards"<<endl;
+cout<<"Converted value in feet: "<<*feet<< " feet"<<endl;
+cout<<"Converted value in inches: "<<*inches<< " inches"<<endl;
+
+return 0;
+}
